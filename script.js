@@ -50,3 +50,11 @@ if(window.innerWidth>900){
       }
     });
 }
+
+let date= new Date();
+// console.log(date.getFullYear());
+document.querySelector('#date').innerHTML=`${date.getFullYear()}`;
+document.querySelector('#nasoberu').style.cssText=`font-size:30px;`
+document.querySelector('#nasoberu').addEventListener('click',()=>{
+  window.location.href='https://nasobe.ru';
+});
