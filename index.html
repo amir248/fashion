@@ -101,7 +101,7 @@
         /* flex-wrap:wrap; */
         max-width:900px;
         width:100%;
-        margin-top:10%;
+        margin-top:10%; /* MARGIN-TOP */
       }
 
       article section div{
@@ -133,6 +133,34 @@
         width:100%;
         max-width:770px;
       } */
+      .box{
+        display:grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        justify-items: center;
+      }
+      aside{
+        display:grid;
+        position:sticky;
+        top:0;
+        margin-top:10%; /* MARGIN-TOP */
+        max-width:270px;
+        height:50px;
+        /* background: green; */
+      }
+      aside p{
+        display:grid;
+        align-content: center;
+        justify-content: center;
+        border:1px solid grey;
+        min-height:50px;
+        margin-bottom:1%;
+      }
+      @media(max-width:700px){
+        .box{
+          grid-template-columns: auto;
+        }
+      }
       footer{
 
       }
@@ -159,51 +187,104 @@
           </div>
         </div>
       </header>
-      <div style="height:500px;background:green;">
+      <!-- Отступ от верха для вклейки изображения и выравнивания колумнс  -->
+      <div style="height:500px;background:green; width:100%;">
 
       </div>
-      <article>
-        <section>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>Tourism</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>sport</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>fashion</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>clothes</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>clothes</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
-          <div>
-            <img src="Bitmap.svg" alt="img">
-            <span>fashion</span>
-            <p>One of Saturn’s largest rings may be newer than anyone</p>
-          </div>
+      <div class="box">
+        <article>
+          <section>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>Tourism</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>sport</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>fashion</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>clothes</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>clothes</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>fashion</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
 
-        </section>
-        <section>
-          <div>
-            <img src="770.svg" alt="img">
-            <span>Summer</span>
+          </section>
+          <section>
+            <div>
+              <img src="770.svg" alt="img">
+              <span>Summer</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>Tourism</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>sport</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>fashion</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>clothes</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>clothes</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+            <div>
+              <img src="Bitmap.svg" alt="img">
+              <span>fashion</span>
+              <p>One of Saturn’s largest rings may be newer than anyone</p>
+            </div>
+
+          </section>
+        </article>
+        <aside>
+          <p>About the author</p>
+          <div class="">
+            <img src="kate.jpg" alt="girl">
+            <strong>Kate Willems</strong>
+            <i>Food & cooking bloger</i>
+            <p>Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…</p>
+
+          </div>
+          <p>Continue Reading</p>
+          <div class="">
+            <img src="twoImg.jpg" alt="">
+            <strong>jeans</strong>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
-        </section>
-      </article>
+        </aside>
+      </div>
       <footer>
 <span>footer</span>
       </footer>
