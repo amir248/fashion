@@ -30,7 +30,7 @@ if(window.innerWidth>900){
       top:0;
       `;
       console.log('OoKk');
-      div.innerHTML=`<a href="#ok"><h2>Home</h2></a><a href="#recipes"><h2>Recipes</h2></a><a href="article"><h2>Article</h2></a><a href="#contact"><h2>Contact</h2></a><a href="#purchase"><h2>Purchase</h2></a>`;
+      div.innerHTML=`<a href="https://www.figma.com/file/tGrUfiGxJo6Ahku54c7l5f/Fashion-Blog-Template?node-id=0%3A2"><h2>Home</h2></a><a href="#recipes"><h2>Recipes</h2></a><a href="#article"><h2>Article</h2></a><a href="#contact"><h2>Contact</h2></a><a href="#purchase"><h2>Purchase</h2></a>`;
       document.querySelector('body').style.cssText=`overflow:hidden;`
 
       if(ClickCount==2){

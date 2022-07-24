@@ -223,3 +223,7 @@ body > main > footer > p{
 body > main > footer > p > img{
   margin:3%;
 }
+body > main > header > nav > ul > li > a{
+  text-decoration: none;
+  color:black;
+}
