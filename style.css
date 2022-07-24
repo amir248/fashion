@@ -196,3 +196,16 @@ footer nav ul li{
   float:left;
   margin-right:1%;
 }
+body > main > header > nav > div > a > h2{
+  color:violet;
+  font-size:30px;
+  margin:7%;
+  text-shadow:1px 1px black;
+  text-decoration: none;
+}
+a:-webkit-any-link{
+  text-decoration: none;
+}
+body > main > header > nav > div > a{
+  text-decoration:none;
+}
