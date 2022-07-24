@@ -51,6 +51,11 @@ if(window.innerWidth>900){
     });
 }
 
+document.querySelector('body > main > footer > nav > span').addEventListener('click',()=>{
+  window.location.href=`tel:+79123456789#`;
+});
+
+
 let date= new Date();
 // console.log(date.getFullYear());
 document.querySelector('#date').innerHTML=`${date.getFullYear()}`;
