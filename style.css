@@ -97,7 +97,7 @@ body > main > header > div > div > p:nth-child(3){
 /* главная где фотки  */
 article section{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(10px,370px));
+  grid-template-columns:repeat(auto-fill,minmax(10px,770px));
   grid-gap: 15px;
   justify-content:center;
   align-items:center;
@@ -226,4 +226,8 @@ body > main > footer > p > img{
 body > main > header > nav > ul > li > a{
   text-decoration: none;
   color:black;
+}
+#recipes > img{
+  max-width:770px;
+  width:100%;
 }

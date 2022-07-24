@@ -63,3 +63,14 @@ document.querySelector('#nasoberu').style.cssText=`font-size:30px;`
 document.querySelector('#nasoberu').addEventListener('click',()=>{
   window.location.href='https://nasobe.ru';
 });
+let fotki = ['1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpeg','10.jpeg','11.jpeg','12.jpeg','13.jpeg','14.jpeg','15.jpeg','16.jpeg','17.jpeg','18.jpeg','19.jpeg','20.jpeg','21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg'];
+let oj=+0;
+document.querySelector('#recipes > img').addEventListener('click',()=>{
+  oj++;
+  // for(let oj=0;oj<fotki;oj++){}
+  if(oj==24){
+    document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    oj=1;
+  }
+  document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+})
