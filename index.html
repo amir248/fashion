@@ -19,6 +19,7 @@
       }
       article{
           display:grid;
+          justify-content: center;
       }
       header{
         display:grid;
@@ -33,12 +34,21 @@
       }
       .images{
         display:grid;
-        align-content:center;
+        /* align-content:center; */
         align-items:end;
         min-height:500px;
         background:url('Yoimages.svg') center center no-repeat;
         max-width:1920px;
         width:100%;
+        justify-items: center;
+      }
+      header .images div{
+        display:grid;
+        max-width:900px;
+        width:100%;
+        color:white;
+        text-shadow:1px 1px black;
+
       }
       header .images span{
         display:grid;
@@ -46,27 +56,44 @@
         width:100%;
         max-width:900px;
       }
+      header .images p:nth-last-of-type(2){
+        font-size: 30px;
+      }
+      /* body > main > header > div > div > p:nth-child(3) */
+      body > main > header > div > div > p:nth-child(3){
+        margin-bottom:3%;
+      }
       header nav h1{
 
       }
+      /* главная где фотки  */
       article section{
-        display:flex;
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(10px,370px));
+        grid-gap: 15px;
         justify-content:center;
         align-items:center;
-        flex-wrap:wrap;
-
+        /* flex-wrap:wrap; */
+        max-width:900px;
+        width:100%;
+        margin-top:10%;
       }
 
       article section div{
+        display:grid;
         max-width:370px;
         width:100%;
-        height:555px;
+        min-height:555px;
       }
       article section div img{
         width:100%;
         max-width:370px;
         gap:10px;
       }
+      /* article > section > div:nth-child(7) > img{
+        width:100%;
+        max-width:770px;
+      } */
       footer{
 
       }
@@ -86,39 +113,48 @@
           </ul>
         </nav>
         <div class="images">
-          <span>Vehicle</span>
-          <p>One of Saturn’s largest rings may be newer than anyone</p>
-          <p>June 6, 2019    By Rickie Baroch    4 comments</p>
+          <div>
+            <span>Vehicle</span>
+            <p>One of Saturn’s largest rings may be newer than anyone</p>
+            <p>June 6, 2019    By Rickie Baroch    4 comments</p>
+          </div>
         </div>
       </header>
       <article>
         <section>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>Tourism</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>sport</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>fashion</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>clothes</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>clothes</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>fashion</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
           <div>
             <img src="Bitmap.svg" alt="img">
+            <span>Summer</span>
             <p>One of Saturn’s largest rings may be newer than anyone</p>
           </div>
         </section>
