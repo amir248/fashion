@@ -68,13 +68,11 @@ let oj=+0;
 document.querySelector('#recipes > img').addEventListener('click',()=>{
   oj++;
   // for(let oj=0;oj<fotki;oj++){}
-
   if(oj==74){
     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
     oj=0;
   }else if(oj>24){
     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-    console.log("O_o");
     if(oj==74){
       oj=0;
     }
@@ -82,9 +80,6 @@ document.querySelector('#recipes > img').addEventListener('click',()=>{
     if(oj==0){
       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
     }else{
-      console.log('else');
-      console.log(fotki[oj]);
-      console.log(oj);
       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
     }
   }
