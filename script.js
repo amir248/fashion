@@ -51,7 +51,7 @@ if(window.innerWidth>900){
     });
 }
 
-document.querySelector('body > main > footer > nav > span').addEventListener('click',()=>{
+document.querySelector('#tel').addEventListener('click',()=>{
   window.location.href=`tel:+79123456789#`;
 });
 
