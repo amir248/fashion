@@ -68,13 +68,19 @@ let oj=+0;
 function nextClick(){
     oj++;
     // for(let oj=0;oj<fotki;oj++){}
-    if(oj==74){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+    console.log(oj);
+    if(oj==81){
+      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
       oj=0;
+      console.log(oj);
+    }else if(oj>=75){
+      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    }else if(oj==74){
+      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
     }else if(oj>24){
       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
       if(oj==74){
-        oj=0;
+        // oj=0;
       }
     }else{
       if(oj==0){
@@ -85,28 +91,28 @@ function nextClick(){
     }
 };
  // может потом как нибудь заработает
-function returnFoto(){
-  oj--;
-  console.log(oj);
-  // document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-  if(oj==74){
-    document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-    oj=0;
-  }else if(oj>24){
-    document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-    if(oj==74){
-      oj=0;
-    }
-  }else{
-    if(oj==0){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-    }else{
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
-    }
-  }
-};
+// function returnFoto(){
+//   oj--;
+//   console.log(oj);
+//   // document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+//   if(oj==74){
+//     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+//     oj=0;
+//   }else if(oj>24){
+//     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+//     if(oj==74){
+//       oj=0;
+//     }
+//   }else{
+//     if(oj==0){
+//       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+//     }else{
+//       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+//     }
+//   }
+// };
 // document.querySelector('#returnFoto').addEventListener('click',returnFoto);
  // завтра
 
 document.querySelector('#recipes > p > img'),addEventListener('click',nextClick);
-document.querySelector('#recipes > img').addEventListener('click',nextClick);
+// document.querySelector('#recipes > img').addEventListener('click',nextClick);
