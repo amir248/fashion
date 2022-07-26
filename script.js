@@ -65,9 +65,30 @@ document.querySelector('#nasoberu').addEventListener('click',()=>{
 });
 let fotki = ['0.jpg','1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpeg','10.jpeg','11.jpeg','12.jpeg','13.jpeg','14.jpeg','15.jpeg','16.jpeg','17.jpeg','18.jpeg','19.jpeg','20.jpeg','21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg','26.jpg','27.jpg','28.jpg','29.jpg','30.jpg','31.jpg','32.jpg','33.jpg','34.jpg','35.jpg','36.jpg','38.jpg','39.jpg','40.jpg','41.jpg','42.jpg','43.jpg','44.jpg','45.jpg','46.jpg','47.jpg','48.jpg','49.jpg','50.jpg','51.jpg','52.jpg','53.jpg','54.jpg','55.jpg','56.jpg','57.jpg','58.jpg','59.jpg','60.jpg','61.jpg','62.jpg','63.jpg','64.jpg','65.jpg','66.jpg','67.jpg','68.jpg','69.jpg','70.jpg','71.jpg','72.jpg','73.jpg','74.jpg'];
 let oj=+0;
-document.querySelector('#recipes > img').addEventListener('click',()=>{
-  oj++;
-  // for(let oj=0;oj<fotki;oj++){}
+function nextClick(){
+    oj++;
+    // for(let oj=0;oj<fotki;oj++){}
+    if(oj==74){
+      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+      oj=0;
+    }else if(oj>24){
+      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+      if(oj==74){
+        oj=0;
+      }
+    }else{
+      if(oj==0){
+        document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+      }else{
+        document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+      }
+    }
+};
+ // может потом как нибудь заработает
+function returnFoto(){
+  oj--;
+  console.log(oj);
+  // document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
   if(oj==74){
     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
     oj=0;
@@ -83,5 +104,9 @@ document.querySelector('#recipes > img').addEventListener('click',()=>{
       document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
     }
   }
+};
+// document.querySelector('#returnFoto').addEventListener('click',returnFoto);
+ // завтра
 
-})
+document.querySelector('#recipes > p > img'),addEventListener('click',nextClick);
+document.querySelector('#recipes > img').addEventListener('click',nextClick);
