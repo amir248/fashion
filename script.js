@@ -114,5 +114,5 @@ function nextClick(){
 // document.querySelector('#returnFoto').addEventListener('click',returnFoto);
  // завтра
 
-document.querySelector('#recipes > p > img'),addEventListener('click',nextClick);
-// document.querySelector('#recipes > img').addEventListener('click',nextClick);
+// document.querySelector('#recipes > p > img'),addEventListener('click',nextClick);
+document.querySelector('#recipes').addEventListener('click',nextClick);
