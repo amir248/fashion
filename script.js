@@ -63,32 +63,36 @@ document.querySelector('#nasoberu').style.cssText=`font-size:30px;`
 document.querySelector('#nasoberu').addEventListener('click',()=>{
   window.location.href='https://nasobe.ru';
 });
-let fotki = ['0.jpg','1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpeg','10.jpeg','11.jpeg','12.jpeg','13.jpeg','14.jpeg','15.jpeg','16.jpeg','17.jpeg','18.jpeg','19.jpeg','20.jpeg','21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg','26.jpg','27.jpg','28.jpg','29.jpg','30.jpg','31.jpg','32.jpg','33.jpg','34.jpg','35.jpg','36.jpg','38.jpg','39.jpg','40.jpg','41.jpg','42.jpg','43.jpg','44.jpg','45.jpg','46.jpg','47.jpg','48.jpg','49.jpg','50.jpg','51.jpg','52.jpg','53.jpg','54.jpg','55.jpg','56.jpg','57.jpg','58.jpg','59.jpg','60.jpg','61.jpg','62.jpg','63.jpg','64.jpg','65.jpg','66.jpg','67.jpg','68.jpg','69.jpg','70.jpg','71.jpg','72.jpg','73.jpg','74.jpg','75.jpeg','76.jpeg','77.jpeg','78.jpeg','79.jpeg','80.jpeg','81.jpeg','82.jpeg','83.jpeg','84.jpeg'];
+let fotki = ['0.jpg','1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpeg','10.jpeg','11.jpeg','12.jpeg','13.jpeg','14.jpeg','15.jpeg','16.jpeg','17.jpeg','18.jpeg','19.jpeg','20.jpeg','21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg','26.jpg','27.jpg','28.jpg','29.jpg','30.jpg','31.jpg','32.jpg','33.jpg','34.jpg','35.jpg','36.jpg','38.jpg','39.jpg','40.jpg','41.jpg','42.jpg','43.jpg','44.jpg','45.jpg','46.jpg','47.jpg','48.jpg','49.jpg','50.jpg','51.jpg','52.jpg','53.jpg','54.jpg','55.jpg','56.jpg','57.jpg','58.jpg','59.jpg','60.jpg','61.jpg','62.jpg','63.jpg','64.jpg','65.jpg','66.jpg','67.jpg','68.jpg','69.jpg','70.jpg','71.jpg','72.jpg','73.jpg','74.jpg','75.jpeg','76.jpeg','77.jpeg','78.jpeg','79.jpeg','80.jpeg','81.jpeg','82.jpeg','83.jpeg','84.jpeg','85.jpeg','86.jpeg','87.jpeg','88.jpeg','89.jpeg','90.jpeg','91.jpeg','92.jpeg','93.jpeg','94.jpeg','95.jpeg','96.jpeg','97.jpeg','98.jpeg','99.jpeg','100.jpeg','101.jpeg','102.jpeg','103.jpeg','104.jpeg','105.jpeg','106.jpeg'];
 let oj=+0;
 function nextClick(){
     oj++;
     // for(let oj=0;oj<fotki;oj++){}
-    console.log(oj);
-    if(oj==84){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    console.log(fotki[oj]);
+    document.querySelector('#recipes > img').setAttribute('src','img/'+`${fotki[oj]}`);
+    if(oj>=106){
       oj=0;
-      console.log(oj);
-    }else if(oj>=75){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
-    }else if(oj==74){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-    }else if(oj>24){
-      document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-      if(oj==74){
-        // oj=0;
-      }
-    }else{
-      if(oj==0){
-        document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
-      }else{
-        document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
-      }
     }
+    // if(oj==84){
+    //   document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    //   oj=0;
+    //   console.log(oj);
+    // }else if(oj>=75){
+    //   document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    // }else if(oj==74){
+    //   document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+    // }else if(oj>24){
+    //   document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+    //   if(oj==74){
+    //     // oj=0;
+    //   }
+    // }else{
+    //   if(oj==0){
+    //     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpg');
+    //   }else{
+    //     document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
+    //   }
+    // }
 };
  // может потом как нибудь заработает
 // function returnFoto(){
