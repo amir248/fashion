@@ -70,8 +70,8 @@ function nextClick(){
     // for(let oj=0;oj<fotki;oj++){}
     console.log(fotki[oj]);
     document.querySelector('#recipes > img').setAttribute('src','img/'+`${fotki[oj]}`);
-    if(oj>=106){
-      oj=0;
+    if(oj>=105){
+     return  oj=0;
     }
     // if(oj==84){
     //   document.querySelector('#recipes > img').setAttribute('src','img/'+[oj]+'.jpeg');
