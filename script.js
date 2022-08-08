@@ -30,7 +30,7 @@ if(window.innerWidth>900){
       top:0;
       `;
       console.log('OoKk');
-      div.innerHTML=`<a href="https://www.figma.com/file/tGrUfiGxJo6Ahku54c7l5f/Fashion-Blog-Template?node-id=0%3A2"><h2>Home</h2></a><a href="#recipes"><h2>Recipes</h2></a><a href="#article"><h2>Article</h2></a><a href="#contact"><h2>Contact</h2></a><a href="#purchase"><h2>Purchase</h2></a>`;
+      div.innerHTML=`<a href="https://www.figma.com/file/tGrUfiGxJo6Ahku54c7l5f/Fashion-Blog-Template?node-id=0%3A2"><h2>Home</h2></a><a href="#recipes"><h2>Recipes</h2></a><a href="#article"><h2>Article</h2></a><a href="#contact"><h2>Contact</h2></a><a href="#purchase"><h2>Purchase</h2></a><h2>  <a href="tel:+79833030458" id="tel"><img src="tel.png" alt="Позвонить Алине" title="Позвонить"></a></h2>`;
       document.querySelector('body').style.cssText=`overflow:hidden;`
 
       if(ClickCount==2){
@@ -52,7 +52,7 @@ if(window.innerWidth>900){
 }
 
 document.querySelector('#tel').addEventListener('click',()=>{
-  window.location.href=`tel:+79123456789#`;
+  window.location.href=`tel:+79833030458`;
 });
 
 
