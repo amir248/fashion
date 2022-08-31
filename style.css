@@ -95,17 +95,16 @@ body > main > header > div > div > p:nth-child(3){
 }
 
 /* главная где фотки  */
-article section{
+/* article section{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(10px,770px));
   grid-gap: 15px;
   justify-content:center;
   align-items:center;
-  /* flex-wrap:wrap; */
   max-width:900px;
   width:100%;
-  margin-top:10%; /* MARGIN-TOP */
-}
+  margin-top:10%;
+} */
 
 article section div{
   display:grid;
@@ -123,19 +122,20 @@ article section div img{
 }
 
  /* style under the second section  */
-article section:nth-of-type(2){
+article section:nth-of-type(1){
+  margin-top: 10%;
   display:grid;
   grid-template-columns: repeat(auto-fill,minmax(10px,770px));
 }
-article section:nth-of-type(2) div{
+article section:nth-of-type(1) div{
   width:100%; max-width:770px;
 }
-article section:nth-of-type(2) div img{
+article section:nth-of-type(1) div img{
   width:100%;
   max-width:770px;
   gap:10px;
 }
-article section:nth-of-type(3){
+article section:nth-of-type(2){
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(10px,370px));
   grid-gap: 15px;
@@ -241,4 +241,22 @@ body > main > header > nav > ul > li > a{
 #recipes > img{
   max-width:770px;
   width:100%;
+}
+
+
+#article > div:nth-child(1){
+  background:rgba(255,255,255,0.3);
+  border-radius: 15px;
+}
+#article > div:nth-child(2){
+  background:rgba(255,250,255,0.3);
+  border-radius: 15px;
+}
+#article > div:nth-child(3){
+  background:rgba(200,255,255,0.3);
+  border-radius: 15px;
+}
+#article > div:nth-child(4){
+  background:rgba(255,255,200,0.3);
+  border-radius: 15px;
 }
